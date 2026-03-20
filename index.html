@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Software Engineer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-logo" href="#hero">Portfolio</a>
+        <nav class="site-nav" aria-label="Primary">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="#hero">Home</a></li>
+            <li><a class="site-nav__link" href="#education">Education</a></li>
+            <li><a class="site-nav__link" href="#skills">Skills</a></li>
+            <li><a class="site-nav__link" href="#projects">Projects</a></li>
+            <li>
+              <button
+                type="button"
+                class="site-nav__link site-nav__link--button"
+                id="contact-open-nav"
+                aria-haspopup="dialog"
+                aria-controls="contact-modal"
+              >
+                Contact
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="hero" class="section section--hero" aria-labelledby="hero-heading">
+        <div class="section__inner">
+          <h1 id="hero-heading" class="hero__name">Alex Developer</h1>
+          <p class="hero__title">Software Engineer</p>
+          <p class="hero__description">
+            Placeholder introduction: full-stack engineer focused on building clear, maintainable
+            systems. This copy will be replaced with your final bio in a later phase.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="assets/resume.pdf" download>Resume</a>
+            <button
+              type="button"
+              class="btn btn--secondary"
+              id="contact-open-hero"
+              aria-haspopup="dialog"
+              aria-controls="contact-modal"
+            >
+              Contact
+            </button>
+          </div>
+          <ul class="social-links" aria-label="Social profiles">
+            <li>
+              <a
+                class="social-links__link"
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                class="social-links__link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a class="social-links__link" href="mailto:you@example.com">Email</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="education" class="section" aria-labelledby="education-heading">
+        <div class="section__inner">
+          <h2 id="education-heading" class="section__title">Education</h2>
+          <ul class="education-list">
+            <li class="education-card">
+              <h3 class="education-card__school">Example University</h3>
+              <p class="education-card__degree">Bachelor of Science in Computer Science</p>
+              <p class="education-card__field">Field: Computer Science</p>
+              <p class="education-card__dates">2018 — 2022</p>
+              <p class="education-card__notes">
+                Honors / coursework placeholder — replace with your details later.
+              </p>
+            </li>
+            <li class="education-card">
+              <h3 class="education-card__school">Online Learning Platform</h3>
+              <p class="education-card__degree">Certificate, Advanced Topics</p>
+              <p class="education-card__field">Field: Software Engineering</p>
+              <p class="education-card__dates">2023</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills" class="section" aria-labelledby="skills-heading">
+        <div class="section__inner">
+          <h2 id="skills-heading" class="section__title">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3 class="skill-group__title">Languages</h3>
+              <ul class="skill-group__list">
+                <li class="skill-group__item">JavaScript</li>
+                <li class="skill-group__item">TypeScript</li>
+                <li class="skill-group__item">Python</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title">Frontend</h3>
+              <ul class="skill-group__list">
+                <li class="skill-group__item">HTML</li>
+                <li class="skill-group__item">CSS</li>
+                <li class="skill-group__item">React</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title">Backend</h3>
+              <ul class="skill-group__list">
+                <li class="skill-group__item">Node.js</li>
+                <li class="skill-group__item">REST APIs</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title">Cloud / DevOps</h3>
+              <ul class="skill-group__list">
+                <li class="skill-group__item">CI/CD</li>
+                <li class="skill-group__item">Docker</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title">Databases</h3>
+              <ul class="skill-group__list">
+                <li class="skill-group__item">PostgreSQL</li>
+                <li class="skill-group__item">Redis</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title">Tools / Platforms</h3>
+              <ul class="skill-group__list">
+                <li class="skill-group__item">Git</li>
+                <li class="skill-group__item">GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-heading">
+        <div class="section__inner">
+          <h2 id="projects-heading" class="section__title">Projects</h2>
+          <div
+            class="project-filters"
+            role="group"
+            aria-label="Filter projects by category"
+          >
+            <button type="button" class="filter-btn filter-btn--active" data-filter="all">
+              All
+            </button>
+            <button type="button" class="filter-btn" data-filter="frontend">Frontend</button>
+            <button type="button" class="filter-btn" data-filter="backend">Backend</button>
+            <button type="button" class="filter-btn" data-filter="full-stack">Full Stack</button>
+            <button type="button" class="filter-btn" data-filter="cloud">Cloud</button>
+            <button type="button" class="filter-btn" data-filter="mobile">Mobile</button>
+            <button type="button" class="filter-btn" data-filter="other">Other</button>
+          </div>
+          <div class="projects-display" id="projects-display">
+            <article class="project-card" data-category="full-stack">
+              <h3 class="project-card__title">Sample Dashboard</h3>
+              <p class="project-card__description">
+                Placeholder project description. Replace with your project summary.
+              </p>
+              <p class="project-card__stack">React, Node.js, PostgreSQL</p>
+              <p class="project-card__tags">Tags: SPA, API</p>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link">Repository</a>
+                <a href="#" class="project-card__link">Live demo</a>
+              </div>
+            </article>
+            <article class="project-card" data-category="frontend">
+              <h3 class="project-card__title">UI Component Library</h3>
+              <p class="project-card__description">
+                Placeholder for a frontend-focused portfolio piece.
+              </p>
+              <p class="project-card__stack">HTML, CSS, JavaScript</p>
+              <p class="project-card__tags">Tags: Accessibility</p>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link">Repository</a>
+              </div>
+            </article>
+            <article class="project-card" data-category="cloud">
+              <h3 class="project-card__title">Infrastructure Templates</h3>
+              <p class="project-card__description">
+                Placeholder cloud / DevOps style project.
+              </p>
+              <p class="project-card__stack">Terraform, AWS</p>
+              <p class="project-card__tags">Tags: IaC</p>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link">Repository</a>
+              </div>
+            </article>
+          </div>
+          <p class="projects-empty" id="projects-empty" hidden>No projects match this filter.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__note">© <span id="footer-year">2026</span> Alex Developer. Placeholder footer.</p>
+        <ul class="social-links social-links--footer" aria-label="Social and contact">
+          <li>
+            <a
+              class="social-links__link"
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              class="social-links__link"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a class="social-links__link" href="mailto:you@example.com">Email</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <div
+      id="contact-modal"
+      class="contact-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="contact-modal-title"
+      hidden
+    >
+      <div class="contact-modal__backdrop" data-modal-close tabindex="-1" aria-hidden="true"></div>
+      <div class="contact-modal__panel">
+        <h2 id="contact-modal-title" class="contact-modal__title">Contact Me</h2>
+        <p class="contact-modal__text">
+          Reach out via email. Your mail app will open with the address below.
+        </p>
+        <p class="contact-modal__email" id="contact-email-display">you@example.com</p>
+        <a
+          class="btn btn--primary contact-modal__action"
+          href="mailto:you@example.com?subject=Portfolio%20inquiry"
+          >Email me</a
+        >
+        <button type="button" class="contact-modal__close" id="contact-modal-close" aria-label="Close contact dialog">
+          Close
+        </button>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
