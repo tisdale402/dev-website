@@ -53,28 +53,28 @@ Ensure the site is visually structured and responsive across defined screen size
 
 ### Checklist
 
-* [ ] Visual styling is applied across all sections
-* [ ] Layout is consistent and readable
-* [ ] Components are visually distinct:
+* [x] Visual styling is applied across all sections
+* [x] Layout is consistent and readable
+* [x] Components are visually distinct:
 
-  * [ ] Navigation
-  * [ ] Buttons
-  * [ ] Project cards
-  * [ ] Skill groups
-  * [ ] Modal
-* [ ] Light theme is implemented
-* [ ] Layout adapts across:
+  * [x] Navigation
+  * [x] Buttons
+  * [x] Project cards
+  * [x] Skill groups
+  * [x] Modal
+* [x] Light theme is implemented
+* [x] Layout adapts across:
 
-  * [ ] Mobile
-  * [ ] Tablet
-  * [ ] Desktop
-* [ ] Content remains readable and usable at all sizes
-* [ ] No layout overflow or broken alignment occurs
+  * [x] Mobile
+  * [x] Tablet
+  * [x] Desktop
+* [x] Content remains readable and usable at all sizes
+* [x] No layout overflow or broken alignment occurs
 
 ### Exit Criteria
 
-* [ ] Site is fully usable across defined screen sizes
-* [ ] Visual hierarchy is clear and consistent
+* [x] Site is fully usable across defined screen sizes
+* [x] Visual hierarchy is clear and consistent
 
 ---
 

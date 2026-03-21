@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,9 +12,18 @@
     <header class="site-header">
       <div class="site-header__inner">
         <a class="site-logo" href="#hero">Portfolio</a>
+        <input type="checkbox" id="site-nav-toggle" class="site-nav-toggle" />
+        <label
+          for="site-nav-toggle"
+          class="site-nav__menu-btn"
+          aria-label="Open or close navigation menu"
+        >
+          <span class="site-nav__menu-icon" aria-hidden="true"></span>
+        </label>
         <nav class="site-nav" aria-label="Primary">
           <ul class="site-nav__list">
             <li><a class="site-nav__link" href="#hero">Home</a></li>
+            <li><a class="site-nav__link" href="#experience">Experience</a></li>
             <li><a class="site-nav__link" href="#education">Education</a></li>
             <li><a class="site-nav__link" href="#skills">Skills</a></li>
             <li><a class="site-nav__link" href="#projects">Projects</a></li>
@@ -76,6 +85,60 @@
             </li>
             <li>
               <a class="social-links__link" href="mailto:you@example.com">Email</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experience" class="section" aria-labelledby="experience-heading">
+        <div class="section__inner">
+          <h2 id="experience-heading" class="section__title">Work experience</h2>
+          <ul class="experience-list">
+            <li class="experience-card">
+              <div class="experience-card__header">
+                <h3 class="experience-card__title">Senior Software Engineer</h3>
+                <p class="experience-card__company">Example Tech Corp</p>
+                <p class="experience-card__tenure">Jan 2022 — Present</p>
+              </div>
+              <div class="experience-card__body">
+                <h4 class="experience-card__subtitle">Responsibilities</h4>
+                <ul class="experience-card__duties">
+                  <li>Led design and delivery of customer-facing APIs used by multiple product teams.</li>
+                  <li>Mentored junior engineers through code review, pairing, and roadmap planning.</li>
+                  <li>Improved deployment reliability by introducing automated checks and monitoring.</li>
+                </ul>
+                <h4 class="experience-card__subtitle">Skills used</h4>
+                <ul class="experience-card__skills" aria-label="Skills required for this role">
+                  <li class="experience-card__skill">TypeScript</li>
+                  <li class="experience-card__skill">Node.js</li>
+                  <li class="experience-card__skill">PostgreSQL</li>
+                  <li class="experience-card__skill">AWS</li>
+                  <li class="experience-card__skill">Docker</li>
+                </ul>
+              </div>
+            </li>
+            <li class="experience-card">
+              <div class="experience-card__header">
+                <h3 class="experience-card__title">Software Engineer</h3>
+                <p class="experience-card__company">Startup Labs Inc.</p>
+                <p class="experience-card__tenure">Jun 2019 — Dec 2021</p>
+              </div>
+              <div class="experience-card__body">
+                <h4 class="experience-card__subtitle">Responsibilities</h4>
+                <ul class="experience-card__duties">
+                  <li>Built responsive web features in collaboration with design and product.</li>
+                  <li>Maintained legacy services while incrementally modernizing the stack.</li>
+                  <li>Participated in on-call rotation and incident response.</li>
+                </ul>
+                <h4 class="experience-card__subtitle">Skills used</h4>
+                <ul class="experience-card__skills" aria-label="Skills required for this role">
+                  <li class="experience-card__skill">JavaScript</li>
+                  <li class="experience-card__skill">React</li>
+                  <li class="experience-card__skill">Python</li>
+                  <li class="experience-card__skill">Redis</li>
+                  <li class="experience-card__skill">Git</li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
