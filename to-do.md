@@ -88,31 +88,31 @@ Implement all required interactive behaviors.
 
 #### Contact Modal
 
-* [ ] Contact button opens modal
-* [ ] Modal can be closed
-* [ ] Email action opens user’s email client via `mailto:`
+* [x] Contact button opens modal
+* [x] Modal can be closed
+* [x] Email action opens user’s email client via `mailto:`
 
 #### Theme System
 
-* [ ] Light and dark themes are supported
-* [ ] Theme toggle control is present
-* [ ] Theme selection persists across sessions
+* [x] Light and dark themes are supported
+* [x] Theme toggle control is present
+* [x] Theme selection persists across sessions
 
 #### Project Filtering
 
-* [ ] Filter controls are functional
-* [ ] Projects update based on selected filter
-* [ ] “All” filter displays all projects
-* [ ] Empty state is shown when no projects match
+* [x] Filter controls are functional
+* [x] Projects update based on selected filter
+* [x] “All” filter displays all projects
+* [x] Empty state is shown when no projects match
 
 #### Navigation
 
-* [ ] Navigation links correctly access sections
+* [x] Navigation links correctly access sections
 
 ### Exit Criteria
 
-* [ ] All interactive elements function as specified
-* [ ] No required interaction is missing
+* [x] All interactive elements function as specified
+* [x] No required interaction is missing
 
 ---
 
