@@ -390,11 +390,11 @@ main > section.section:nth-child(even) {
 .hero__name::after {
   content: "";
   display: block;
-  width: 3rem;
-  height: 3px;
-  margin-top: 0.75rem;
+  width: min(10rem, 55vw);
+  height: 6px;
+  margin-top: 0.85rem;
   background: linear-gradient(90deg, var(--color-accent), color-mix(in srgb, var(--color-accent) 40%, transparent));
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .hero__title {
@@ -491,8 +491,37 @@ main > section.section:nth-child(even) {
   color: var(--color-accent);
 }
 
+.social-links--footer {
+  gap: 0.5rem;
+}
+
 .social-links--footer .social-links__link {
   min-height: auto;
+}
+
+.social-links__link--icon-footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-elevated);
+  box-shadow: var(--color-shadow-sm);
+}
+
+.social-links__link--icon-footer:hover {
+  border-color: color-mix(in srgb, var(--color-accent) 45%, var(--color-border));
+  background: var(--color-accent-muted);
+}
+
+.social-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex-shrink: 0;
 }
 
 /* ----- Work experience ----- */
@@ -795,6 +824,51 @@ main > section.section:nth-child(even) {
 .project-card:hover {
   box-shadow: var(--color-shadow-lg);
   border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
+}
+
+.project-card--incomplete {
+  opacity: 0.72;
+  filter: grayscale(0.7);
+  background: color-mix(in srgb, var(--color-bg-muted) 45%, var(--color-bg-elevated));
+  border-style: dashed;
+}
+
+.project-card.project-card--incomplete:hover {
+  opacity: 0.72;
+  filter: grayscale(0.7);
+  box-shadow: var(--color-shadow-md);
+  border-color: var(--color-border);
+}
+
+.project-card__heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card__heading .project-card__title {
+  margin-bottom: 0;
+}
+
+.project-card__status {
+  flex-shrink: 0;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-subtle);
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-muted);
+}
+
+.icon-svg {
+  width: 40px;
+  height: 40px;
 }
 
 .project-card__title {
