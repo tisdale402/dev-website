@@ -58,7 +58,7 @@
           <h1 id="hero-heading" class="hero__name">Alex Tisdale</h1>
           <p class="hero__title">Software Engineer</p>
           <p class="hero__description">
-            I turn ideas into reality by pushing some buttons
+            I turn ideas into reality by pushing some buttons. Custom domain coming soon :)
           </p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="assets/resume.pdf" download>Resume</a>
@@ -100,7 +100,7 @@
 
       <section id="experience" class="section" aria-labelledby="experience-heading">
         <div class="section__inner">
-          <h2 id="experience-heading" class="section__title">Work experience</h2>
+          <h2 id="experience-heading" class="section__title">Experience</h2>
           <ul class="experience-list">
             <li class="experience-card">
               <div class="experience-card__header">
@@ -311,16 +311,18 @@
                 <a href="https://tisdale402.github.io/game-station/" class="project-card__link" target="_blank" rel="noopener noreferrer">Live demo</a>
               </div>
             </article>
-            <article class="project-card" data-category="frontend">
-              <h3 class="project-card__title">Saiga</h3>
-              <p class="project-card__description">
-                Catch the signal before the noise. Saiga reveals what’s starting to happen—so you can move first.
-              </p>
-              <p class="project-card__stack">TypeScript, React, Storybook</p>
-              <p class="project-card__tags">Tags: Accessibility, Design System</p>
-              <div class="project-card__links">
-                <a href="https://www.example.com" class="project-card__link" target="_blank" rel="noopener noreferrer">Live Site</a>
+            <article
+              class="project-card project-card--incomplete"
+              data-category="frontend"
+              aria-label="Saiga — project in progress"
+            >
+              <div class="project-card__heading">
+                <h3 class="project-card__title">Coming Soon...</h3>
+                <span class="project-card__status">In progress</span>
               </div>
+              <p class="project-card__description">
+                Catch the signal before the noise. This app reveals what’s starting to happen, so you can move first.
+              </p>
             </article>
           </div>
           <p class="projects-empty" id="projects-empty" hidden>No projects match this filter.</p>
@@ -330,7 +332,7 @@
 
     <footer class="site-footer">
       <div class="site-footer__inner">
-        <p class="site-footer__note">© <span id="footer-year">2026</span> Alex Tisdale. Built with HTML, CSS, and JavaScript.</p>
+        <p class="site-footer__note">© <span id="footer-year">2026</span> Alex Tisdale</p>
         <ul class="social-links social-links--footer" aria-label="Social and contact">
           <li>
             <a
